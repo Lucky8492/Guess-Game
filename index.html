@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <link rel="stylesheet" href="style.css"> 
+ <title>Guess Game</title> 
+</head> 
+<body> 
+     <div class="gametext"> 
+        <h1>WELCOME TO THE GUESS GAME </h1> 
+    </div> 
+    
+    <div class="gameContainer"> 
+        <p class="textOne">Guess The Number Please</p> 
+<form class="form"> 
+    <div class="inputone">
+        <input type="text" class="input"> 
+            <div class="labelline">Your number </div> 
+     </div> 
+     
+     <div class="inputtwo"> 
+        <button type="submit" id="sub" value="Submit">Submit</button> 
+     </div> <div class="message"></div> 
+
+ </form> 
+      <div class="lowOrHigh"></div> 
+         <p class="previousGuesses">Previous Guesses: 
+            <div class="GuesseOne"></div></p> 
+            <p class="reamingGuesses">ReamingGuesses:
+       <div class="GuesseTwo"></div></p> 
+       <div class="result"></div>
+        <div class="Rule"> 
+            <p>Please read the game rules carefully</p> 
+             <ul > 
+                <li class="ruleOne">Guess the number between 1 to 100.</li> 
+                <li class="ruleOne">You have only 10 guesses to get the right one. </li> 
+             </ul>
+             </div>
+             <div class="newGameMessage"></div>
+    </div>
+<script src="brain.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    background-color:  #CADCFC;
+    color:  #00246B;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gametext{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.gameContainer{
+     display: flex;
+     justify-content: center;
+     align-items:center;
+     width: 60%;
+    right: 30%;
+     flex-direction: column;  
+   border-radius: 15px;
+   background-color: #00246B;
+   color: #CADCFC;
+   
+}
+
+.textOne{
+    font-size: large;
+    font-weight: bold;
+}
+
+.inputone{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputone input{
+    
+    position:absolute;
+    width:200px ;
+    outline: none;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    border: 1px solid #f0ffff;
+    background: transparent;
+    transition: 0.1s ease;
+}
+
+.labelline{
+   transition: 0.1s ease;
+   z-index: 2;
+}
+
+.inputone input:focus,.inputone input:valid{
+  color:#CADCFC;
+  border: 2px solid #CADCFC;
+  z-index: 1;
+}
+
+.inputone input:focus + .labelline,.inputone input:valid + .labelline{
+    color: #CADCFC;
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-65px,-29px) scale(0.88);
+  }
+
+button{
+    color: #CADCFC;
+    background-color: transparent;
+    height: 30px;
+    width:100px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #CADCFC;
+}
+
+button:hover{
+    color: #00246B;
+    background-color: #CADCFC;
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.previousGuesses{   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reamingGuesses{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
